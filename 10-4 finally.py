@@ -8,7 +8,7 @@ class Bignumbererr(Exception):
 try:
     print("한 자리 숫자 나누기 전용 계산기입니다.")
     num1 = int(input("첫번째 숫자를 입력해주세요! : "))
-    num2 = int(input("첫번째 숫자를 입력해주세요! : "))
+    num2 = int(input("두번째 숫자를 입력해주세요! : "))
     if num1 >= 10 or num2 >=10:
         raise Bignumbererr("입력값 : {0}, {1}".format(num1, num2))  # 출력할 에러 문구를 raise 값에서 작성
     print("{0} / {1} = {2}".format(num1, num2, int(num1 / num2)))
